@@ -1,0 +1,29 @@
+{
+  "name": "legion-selenium-webdriver",
+  "version": "0.0.28",
+  "description": "Instrumented browser-based tests on top of selenium-webdriver.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "eslint ./src/** ./spec/** && jasmine && istanbul cover jasmine",
+    "clean": "rimraf node_modules coverage"
+  },
+  "author": "Christopher Lane Hinson <lane@webperformance.com>",
+  "license": "APSL-2.0",
+  "dependencies": {
+    "legion-instrument": "https://github.com/lane-webperformance/legion-instrument#v0.0.41",
+    "legion-io": "https://github.com/lane-webperformance/legion-io#v0.0.41",
+    "legion-io-proxy": "https://github.com/lane-webperformance/legion-io-proxy#v0.0.41",
+    "legion-metrics": "https://github.com/lane-webperformance/legion-metrics#v0.0.41",
+    "selenium-webdriver": "^3.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "istanbul": "^0.4.2",
+    "jasmine": "^2.8.0",
+    "legion": "https://github.com/lane-webperformance/legion",
+    "legion-io-delay": "https://github.com/lane-webperformance/legion-io-delay#v0.0.41",
+    "legion-obstacle-course": "https://github.com/lane-webperformance/legion-obstacle-course",
+    "rimraf": "^2.5.2"
+  }
+}
