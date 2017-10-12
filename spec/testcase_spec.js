@@ -43,7 +43,7 @@ describe('The selenium webdriver module for legion', function() {
       .chain(Driver.findElement(By.id('right')).getText())
       .chain(text => expect(text).toEqual('Right'))
       .chain(delay(5,10)))
-    .run(1).assert()
+    .assert(1)
     .then(done)
     .catch(done.fail);
   });
