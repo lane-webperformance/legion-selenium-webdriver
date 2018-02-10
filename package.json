@@ -1,6 +1,6 @@
 {
   "name": "legion-selenium-webdriver",
-  "version": "0.0.47",
+  "version": "0.0.50",
   "description": "Instrumented browser-based tests on top of selenium-webdriver.",
   "main": "src/index.js",
   "scripts": {
