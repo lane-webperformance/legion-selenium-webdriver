@@ -8,7 +8,7 @@ const webdriver = require('../src/index');
 const By = webdriver.By;
 const Driver = webdriver.Driver;
 
-const obstacle = require('legion-obstacle-course');
+const obstacle = require('legion-obstacle-course').http;
 const port = 8500;
 const host = 'http://localhost:' + port;
 let server = null;
