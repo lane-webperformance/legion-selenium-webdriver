@@ -19,32 +19,32 @@ describe('The selenium webdriver module for legion', function() {
   it('automates selenium tests with firefox', function(done) {
     L.create()
 
-    // Set up the obstacle course server before the test.
-    .withBeforeTestAction(() => {
-      server = obstacle.listen(port);
-    })
+      // Set up the obstacle course server before the test.
+      .withBeforeTestAction(() => {
+        server = obstacle.listen(port);
+      })
 
-    // Take down the server after the test.
-    .withAfterTestAction(() => {
-      server.close();
-      server = null;
-    })
+      // Take down the server after the test.
+      .withAfterTestAction(() => {
+        server.close();
+        server = null;
+      })
 
-    .using(webdriver.init(new webdriver.Builder().forBrowser('firefox')))
-    .withTestcase(L.of()
-      .chain(delay(5,10))
-      .chain(Driver.get(host + '/static'))
-      .chain(delay(5,10))
-      .chain(Driver.findElement(By.linkText('Meep')).click())
-      .chain(delay(5,10))
-      .chain(Driver.findElement(By.id('left')).click())
-      .chain(Driver.findElement(By.id('left')).getText())
-      .chain(text => expect(text).toEqual('meep!'))
-      .chain(Driver.findElement(By.id('right')).getText())
-      .chain(text => expect(text).toEqual('Right'))
-      .chain(delay(5,10)))
-    .assert(1)
-    .then(done)
-    .catch(done.fail);
+      .using(webdriver.init(new webdriver.Builder().forBrowser('firefox')))
+      .withTestcase(L.of()
+        .chain(delay(5,10))
+        .chain(Driver.get(host + '/static'))
+        .chain(delay(5,10))
+        .chain(Driver.findElement(By.linkText('Meep')).click())
+        .chain(delay(5,10))
+        .chain(Driver.findElement(By.id('left')).click())
+        .chain(Driver.findElement(By.id('left')).getText())
+        .chain(text => expect(text).toEqual('meep!'))
+        .chain(Driver.findElement(By.id('right')).getText())
+        .chain(text => expect(text).toEqual('Right'))
+        .chain(delay(5,10)))
+      .assert(1)
+      .then(done)
+      .catch(done.fail);
   });
 });

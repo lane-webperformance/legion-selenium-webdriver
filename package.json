@@ -17,10 +17,10 @@
     "selenium-webdriver": "^3.5.0"
   },
   "devDependencies": {
-    "eslint": "^2.9.0",
+    "eslint": "^4.17.0",
     "eslint-plugin-promise": "^3.5.0",
     "istanbul": "^0.4.2",
-    "jasmine": "^2.8.0",
+    "jasmine": "^3.0.0",
     "legion": "https://github.com/lane-webperformance/legion#v0.0.51",
     "legion-io-delay": "https://github.com/lane-webperformance/legion-io-delay#v0.0.51",
     "legion-obstacle-course": "https://github.com/lane-webperformance/legion-obstacle-course#v0.0.51",
