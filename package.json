@@ -10,10 +10,10 @@
   "author": "Christopher Lane Hinson <lane@webperformance.com>",
   "license": "APSL-2.0",
   "dependencies": {
-    "legion-instrument": "https://github.com/lane-webperformance/legion-instrument#v0.0.50",
-    "legion-io": "https://github.com/lane-webperformance/legion-io#v0.0.50",
-    "legion-io-proxy": "https://github.com/lane-webperformance/legion-io-proxy#v0.0.50",
-    "legion-metrics": "https://github.com/lane-webperformance/legion-metrics#v0.0.50",
+    "legion-instrument": "https://github.com/lane-webperformance/legion-instrument#v0.0.51",
+    "legion-io": "https://github.com/lane-webperformance/legion-io#v0.0.51",
+    "legion-io-proxy": "https://github.com/lane-webperformance/legion-io-proxy#v0.0.51",
+    "legion-metrics": "https://github.com/lane-webperformance/legion-metrics#v0.0.51",
     "selenium-webdriver": "^3.5.0"
   },
   "devDependencies": {
@@ -21,9 +21,9 @@
     "eslint-plugin-promise": "^3.5.0",
     "istanbul": "^0.4.2",
     "jasmine": "^2.8.0",
-    "legion": "https://github.com/lane-webperformance/legion#v0.0.50",
-    "legion-io-delay": "https://github.com/lane-webperformance/legion-io-delay#v0.0.50",
-    "legion-obstacle-course": "https://github.com/lane-webperformance/legion-obstacle-course#v0.0.50",
+    "legion": "https://github.com/lane-webperformance/legion#v0.0.51",
+    "legion-io-delay": "https://github.com/lane-webperformance/legion-io-delay#v0.0.51",
+    "legion-obstacle-course": "https://github.com/lane-webperformance/legion-obstacle-course#v0.0.51",
     "rimraf": "^2.5.2"
   }
 }
